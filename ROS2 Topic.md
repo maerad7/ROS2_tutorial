@@ -24,7 +24,7 @@
 <pre>ros2 topci info /turtle1/cmd_vel</pre>
 
 7.See interface definition.
-<pre>ros2 interface show type
+<pre>ros2 interface show type</pre>
 <pre>ros2 interface show geometry_msgs/msg/Twist</pre>
 
 8. Publish data to a topic("-=once" means publish once and exit)
