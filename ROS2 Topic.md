@@ -13,7 +13,7 @@
 <pre>ros2 topic list -t </pre>
 
 4. Start rqt graph. Yncheck hide boxes to see hidden topics.
-<pre>rqt_graph<pre>
+<pre>rqt_graph</pre>
 
 5. Seetopic output. Move with teleop to see output after running command.
 <pre>ros2 topic echo topic_name</pre>
@@ -34,3 +34,10 @@
 
 9. Publish data to a topic with rate 1hz.
 <pre>ros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular : {x: 0.0, y: 0.0, z: 1.8}}"</pre>
+
+10. Echo the pose topic. Go to the rqt graph and refresh.
+<pre>ros2 topic echo /turtle1/pose </pre>
+
+11.View topic freq
+<pre>ros2 topic hz tocicname</pre>
+<pre>ros2 topic hz /turlte1/pose</pre>
